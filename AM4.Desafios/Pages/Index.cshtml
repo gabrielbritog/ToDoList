@@ -1,0 +1,36 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="accordion">
+
+    <!-- TODO LIST -->
+    <div class="accordion-item border-0">
+        <div class="accordion-header p-3">
+            <div class="d-flex justify-content-between align-items-center gap-3 mb-3">
+                <h2 class="flex-grow-1 m-0">Tarefas</h2>
+                <div class="d-flex fs-6 gap-3 align-items-center text-nowrap">
+                    <span>Ordenar por:</span>
+                    <button class="btn-order-by btn btn-outline-secondary py-2 px-3" onclick="changeOrderBy('name')">
+                        Nome
+                    </button>
+                    <button class="btn-order-by btn btn-outline-secondary py-2 px-3 active" onclick="changeOrderBy('completed')">
+                        Conclusão                        
+                    </button>
+                </div>
+                <button onclick="createTaskFn()" class="btn btn-primary w-auto px-3">
+                    <span class="fw-bold me-2">Nova Tarefa</span>
+                    <i class="fas fa-plus"></i>
+                </button>
+            </div>
+            <input id="search-bar" placeholder="Pesquisar" class="p-2 border rounded w-100"/>
+        </div>
+        <div class="collapse-container collapse show p-3">
+            <div class="cards-wrapper d-flex flex-column gap-2" id="cards-wrapper">
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,113 @@
+/* Folha de estilo para Component Modal */
+.modal-template {
+    position: relative;
+    background: #ffffff !important;
+    padding: 30px !important;
+    box-sizing: border-box;
+    width: 400px;
+    border-radius: 8px;
+    text-align: center !important;
+}
+
+.modal-template-icon-wrapper {
+    width: 140px;
+    height: 140px;
+    border-radius: 100%;
+    background: #cde6ff;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 64px;
+    color: #55A8FD;
+}
+
+.modal-template-title {
+    color: #55A8FD;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.4;
+    margin: 15px 0;
+}
+
+.modal-template-description {
+    color: #47484A;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.modal-template-actions {
+    margin-top: 15px;
+}
+
+    .modal-template-actions button {
+        margin-top: 10px;
+        max-width: 100%;
+    }
+
+.modal-template-button-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    background: transparent;
+    outline: none;
+    transition: all 0.4s ease-in;
+}
+
+    .modal-template-button-close:hover {
+        opacity: 0.9;
+    }
+
+.input-template-wrapper {
+    margin: 15px 0;
+}
+
+.input-template {
+    height: 48px;
+    border: 1px solid #C4C4C4;
+    color: #98999B;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 0 15px;
+    width: 100%;
+    display: block;
+    background: transparent;
+    font-family: "Open Sans", sans-serif;
+}
+
+    .input-template:placeholder {
+        color: #98999B;
+    }
+
+.input-template-hint {
+    display: block;
+    margin-top: 8px;
+    text-align: left;
+    color: #FD5555;
+    font-size: 11px;
+}
+
+.loader-wrapper {
+    display: none;
+}
+
+    .loader-wrapper.active {
+        display: block;
+    }
+
+.loader-modal-template {
+    border: 4px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 6px solid #3498db;
+    width: 110px;
+    height: 110px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background: #f3f3f3;
+}

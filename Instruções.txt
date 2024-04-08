@@ -1,0 +1,5 @@
+O README está uma documentação detalhando um pouco do projeto, como executar e como deve ser feito as requisições da API. 
+
+Resumindo, para executar é preciso ir no "appsettings.json" na camada da API, após isso abra o Package-Manager e escreva o comando "Update-DataBase". Caso esteja usando o Visual Studio Code, execute o comando "dotnet watch run" + o nome do .csproj  no terminal, por exemplo: " dotnet watch run "AM4.Desafios.ToDoList.csproj" ", caso seja o Visual Studio Community ou Professional, basta executar os dois projetos. 
+
+Nessa mesma pasta tem um vídeo curto mostrando o funcionamento do projeto e mostrando esses passos(O vídeo não está no Git, apenas no arquivo zipado).
